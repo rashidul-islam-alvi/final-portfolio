@@ -1,5 +1,7 @@
 import React from "react";
 
+import { BiChevronRight } from "react-icons/bi";
+
 const Terminal = () => {
   return (
     <div className="">
@@ -9,62 +11,49 @@ const Terminal = () => {
         <div className="w-[12px] h-[12px] bg-[#33c948] rounded-full border-[#2dbb41] ml-[9px] "></div>
       </div>
 
-      <div className="bg-[#5a5d7a] px-2 text-lg rounded-b-lg shadow-gray-500/50 shadow-lg ">
+      <div className="bg-[#5a5d7a] text-xs px-2 md:text-lg rounded-b-lg shadow-gray-500/50 shadow-lg ">
         <div className="mx-[35px]">
-          <div className="mb-[25px] pt-[35px]">
+          <div className="mb-[25px] pt-[35px] ">
             <div>
               <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> my. currentLocation */}
+                <BiChevronRight /> about.me
               </p>
-              <p className="text-[#e7d184]"> "Dhaka Cantonment"</p>
+              <p className="text-[#e7d184]">
+                I am a front end engineer with JavaScript frameworks
+                problem-solving skills and proven experience in creating and
+                designing websites in a test-driven environment with clean code.
+              </p>
             </div>
           </div>
 
           <div className="mb-[25px]">
             <div>
               <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> my. contactInfo */}
+                <BiChevronRight /> my. education
               </p>
               <p className="text-[#e7d184]">
-                [ "rashidul637@gmail.com", "facebook", "whatsapp" ]
+                B.sc in Computer Science & Engineering - Northern University
+                Bangladesh
               </p>
             </div>
           </div>
+
           <div className="mb-[25px]">
             <div>
               <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> my. resume */}
-              </p>
-              <p className="text-[#e7d184]"> "resume.pdf"</p>
-            </div>
-          </div>
-          <div className="mb-[25px]">
-            <div>
-              <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> my. education */}
+                <BiChevronRight /> my. competencies
               </p>
               <p className="text-[#e7d184]">
-                "B.sc in Computer Science & Engineering - Northern University
-                Bangladesh"
+                [ "teamwork", "problem-solving", "multi-tasking",
+                "analytical-thinking" , "communication" , "fast-learn"]
               </p>
             </div>
           </div>
-          <div className="mb-[25px]">
-            <div>
-              <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> my. skills */}
-              </p>
-              <p className="text-[#e7d184]">
-                ["NextJs", "ReactJs", "Tailwind", "Styled Component", "Sass" ,
-                "GraphQL", "NodeJs", "ExpressJs", "Python", "Java", "C", "C++" ,
-                "C#", "Dart", "Flutter"]
-              </p>
-            </div>
-          </div>
+
           <div className="pb-[35px]">
             <div>
-              <p className="flex items-center text-[#f7f7f7]">
-                {/* <BiChevronRight /> */}
+              <p className="flex items-center text-[#f7f7f7]  ">
+                <BiChevronRight className="animate-ping" />
               </p>
             </div>
           </div>

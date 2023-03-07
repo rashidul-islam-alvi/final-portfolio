@@ -1,26 +1,57 @@
-import React, { useState } from "react";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
 
 const NavBar = () => {
-  const [currentActive, setCurrentActive] = useState("");
+  // const [currentActive, setCurrentActive] = useState("");
+  // const [clientWindowHeight, setClientWindowHeight] = useState("");
 
-  const navItems = ["skills", "projects", "contact"];
-  console.log(currentActive);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // });
+
+  // const handleScroll = () => {
+  //   setClientWindowHeight(window.scrollY);
+  // };
+
+  // const bgColor = clientWindowHeight > 0 ? "bg-red" : "";
+  // const navItems = ["skills", "projects", "contact"];
+
   return (
-    <div className="h-[10vh] flex flex-row-reverse px-4 py-4 sticky top-0">
+    <div className={`h-[10vh] flex flex-row-reverse p-4 sticky top-0`}>
       {
-        <ul className="flex justify-end items-center text-xl md:text-3xl md:mx-auto w-1/2">
-          {navItems?.map((item, index) => (
-            <li
-              id={`#${item == currentActive ? currentActive : ""}`}
+        <ul className="flex justify-end items-center text-xl md:text-3xl md:mx-auto w-[70%]">
+          {/* {navItems?.map((item, index) => (
+            <Link
+              href={`/#${item == currentActive ? currentActive : ""}`}
               key={index}
               onClick={() => setCurrentActive(item)}
               className={` cursor-pointer ${
                 index == 0 ? "" : "md:ml-20 ml-5"
-              }  ${currentActive == item ? "text-[#FDCC49]" : "text-white"}`}
+              } text-white hover:text-[#FDCC49]`}
             >
               {item}
-            </li>
-          ))}
+            </Link>
+          ))} */}
+
+          <Link
+            href="#skills"
+            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+          >
+            skills
+          </Link>
+          <Link
+            href="#projects"
+            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+          >
+            projects
+          </Link>
+          <Link
+            href="#contact"
+            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+          >
+            Contact
+          </Link>
         </ul>
       }
     </div>

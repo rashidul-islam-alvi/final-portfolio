@@ -26,11 +26,11 @@ export default function Home() {
         ></link>
       </Head>
 
-      <div className="w-1/2 mx-auto">
+      <div className="w-[70%] mx-auto">
         <About />
-        {/* <Skills />
+        <Skills />
         <Projects />
-        <Contact /> */}
+        <Contact />
       </div>
     </>
   );
