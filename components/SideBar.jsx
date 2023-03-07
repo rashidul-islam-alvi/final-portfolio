@@ -1,7 +1,7 @@
 import React from "react";
 import { BsGithub, BsWhatsapp, BsFacebook } from "react-icons/bs";
 const SideBar = () => {
-  const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
+  // const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
 
   return (
     <div className="hidden fixed left-0 h-full text-white  border-white w-[10%] md:flex flex-col items-center justify-center">
