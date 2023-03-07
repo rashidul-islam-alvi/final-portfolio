@@ -5,7 +5,7 @@ import profilePic from "../assests/profile.jpg";
 import { BsGithub, BsWhatsapp, BsFacebook } from "react-icons/bs";
 
 const About = () => {
-  const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
+  // const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
   return (
     <div className="flex flex-col md:flex-row md:h-[90vh] text-white justify-between items-center pt-10 md:pt-0 ">
       <div className="flex flex-col items-center justify-center flex-1 mb-10 ">
@@ -27,7 +27,7 @@ const About = () => {
 
         <div className="py-3 md:hidden">
           <ul className="flex">
-            {icons.map((icon, i) => (
+            {/* {icons.map((icon, i) => (
               <li
                 key={i}
                 className={`text-3xl ${
@@ -37,7 +37,17 @@ const About = () => {
               >
                 {icon}
               </li>
-            ))}
+            ))} */}
+
+            <li className="text-3xl cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+              <BsFacebook />
+            </li>
+            <li className="text-3xl ml-5 cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+              <BsWhatsapp />
+            </li>
+            <li className="text-3xl ml-5 cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+              <BsGithub />
+            </li>
           </ul>
         </div>
       </div>

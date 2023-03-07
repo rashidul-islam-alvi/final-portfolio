@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
     <div className="hidden fixed left-0 h-full text-white  border-white w-[10%] md:flex flex-col items-center justify-center">
       <ul>
-        {icons.map((icon, i) => (
+        {/* {icons.map((icon, i) => (
           <li
             key={i}
             className={`text-3xl ${
@@ -16,7 +16,17 @@ const SideBar = () => {
           >
             {icon}
           </li>
-        ))}
+        ))} */}
+
+        <li className="text-3xl cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+          <BsFacebook />
+        </li>
+        <li className="text-3xl mt-[4.5rem] cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+          <BsWhatsapp />
+        </li>
+        <li className="text-3xl mt-[4.5rem] cursor-pointer hover:text-[#e7d184] duration-200 transition-all">
+          <BsGithub />
+        </li>
       </ul>
     </div>
   );
