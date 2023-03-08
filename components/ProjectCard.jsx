@@ -23,7 +23,9 @@ const ProjectCard = ({ project }) => {
         </p>
         <div className="flex flex-wrap mb-5 gap-y-2">
           {project.tools?.map((tool) => (
-            <span className={spanStyle}>{tool}</span>
+            <span className={spanStyle} key={project.id}>
+              {tool}
+            </span>
           ))}
         </div>
 
