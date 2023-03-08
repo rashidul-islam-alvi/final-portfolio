@@ -12,7 +12,7 @@ const Terminal = () => {
       </div>
 
       <div className="bg-[#5a5d7a] text-xs px-2 md:text-lg rounded-b-lg shadow-gray-500/50 shadow-lg ">
-        <div className="mx-[35px]">
+        <div className="px-[15px] md:px-[35px]">
           <div className="mb-[25px] pt-[35px] ">
             <div>
               <p className="flex items-center text-[#f7f7f7]">
