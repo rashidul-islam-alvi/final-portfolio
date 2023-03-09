@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import ProjectCard from "./ProjectCard";
-import portfolioPicture from "../assests/portfolio.png";
-import prokemonProject from "../assests/pokemon.png";
-import calculatorProject from "../assests/calculator.png";
-import shikhbeNakiProject from "../assests/shikhbeNaki.png";
+// import portfolioPicture from "../assests/portfolio.png";
+// import prokemonProject from "../assests/pokemon.png";
+// import calculatorProject from "../assests/calculator.png";
+// import shikhbeNakiProject from "../assests/shikhbeNaki.png";
 const Projects = () => {
   const [visibleProjects, setvisibleProjects] = useState(3);
   const handleClick = () => {
@@ -17,7 +17,7 @@ const Projects = () => {
       id: 1,
       title: "Personal Portfolio",
       desc: " A minimal dark/golden themed personal website to demonstrate my skills and projects I have built. Responsive for small, medium and large devices",
-      img: portfolioPicture,
+      // img: portfolioPicture,
       tools: [
         "NextJs",
         "Tailwind",
@@ -34,7 +34,7 @@ const Projects = () => {
       id: 2,
       title: "Shikhbe Naki - A digital learning platform",
       desc: "Biggest project i have built so far. A digital learning platfrom to read documents , enroll into courses, buy ebooks and many more [Live link is broken right now]",
-      img: shikhbeNakiProject,
+      // img: shikhbeNakiProject,
       tools: [
         "ReactJs",
         "Styled-Component",
@@ -49,7 +49,7 @@ const Projects = () => {
       id: 3,
       title: "Pokemon.all",
       desc: "A pokemon website where you can browse all the pokemons and see their abilities, stats and other stuff. It's just a template right now, need to feed it with a pokemon API",
-      img: prokemonProject,
+      // img: prokemonProject,
       tools: [
         "NextJs",
         "Tailwind",
@@ -63,7 +63,7 @@ const Projects = () => {
       id: 4,
       title: "Bill and Tip Calculator",
       desc: "A simple calculator to calculate the bill and tip by per person.",
-      img: calculatorProject,
+      // img: calculatorProject,
       tools: ["Vanilla JS", "CSS", "HTML", "JavaScript"],
     },
   ];
