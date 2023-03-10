@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Header from "./Header";
 import ProjectCard from "./ProjectCard";
-import portfolioPicture from "../assests/portfolio.png";
-import prokemonProject from "../assests/pokemon.png";
-import calculatorProject from "../assests/calculator.png";
-import shikhbeNakiProject from "../assests/shikhbeNaki.png";
+
+import portfolioPicture from "../assests/portfolio.jpg";
+import prokemonProject from "../assests/pokemon.jpg";
+import calculatorProject from "../assests/calculator.jpg";
+import shikhbeNakiProject from "../assests/shikhbeNaki.jpg";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
