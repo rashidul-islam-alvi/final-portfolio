@@ -81,7 +81,7 @@ const Projects = () => {
       <Header title="Projects" />
 
       {projects.slice(0, visibleProjects).map((project) => (
-        <div className="mt-10 md:w-[80%]">
+        <div className="mt-10 md:w-[80%]" key={project.id}>
           <div className="px-3 py-4 md:p-8  md:flex shadow-[0px_0px_3px_rgba(3,102,214,0.3)]">
             <div className="flex-1 hidden md:block">
               <Image src={project.img} className="object-cover w-full h-full" />
