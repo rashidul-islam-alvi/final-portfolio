@@ -21,7 +21,7 @@ module.exports = {
         grey: "#ededed",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
-        secondary: "#e7d184",
+        secondary: "#cfb624",
       },
     },
   },

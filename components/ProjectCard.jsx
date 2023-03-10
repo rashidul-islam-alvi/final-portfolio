@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   const spanStyle = "text-sm mr-2";
 
   return (
-    <div className=" w-full md:w-[70%] px-2 md:px-0 flex gap-x-5 bg-[#0B1C31]  mt-10 rounded-md text-gray-300">
+    <div className=" w-full md:w-[50%] px-2 md:px-0 flex gap-x-5 bg-[#0B1C31]  mt-10 rounded-md text-gray-300">
       {/* <div className="flex-1 hidden w-full md:flex">
         <Image src={project.img} alt="project" className="object-cover" />
       </div> */}

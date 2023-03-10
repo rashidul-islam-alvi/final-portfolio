@@ -18,9 +18,11 @@ const NavBar = () => {
   // const navItems = ["skills", "projects", "contact"];
 
   return (
-    <div className={`h-[10vh] flex flex-row-reverse p-4 sticky top-0`}>
+    <div
+      className={`h-[10vh] text-[#5a5d7a]  flex flex-row-reverse p-4 sticky top-0`}
+    >
       {
-        <ul className="flex justify-end items-center text-xl md:text-3xl md:mx-auto w-[70%]">
+        <ul className="flex justify-end items-center text-xl   md:text-3xl md:mx-auto w-[70%]">
           {/* {navItems?.map((item, index) => (
             <Link
               href={`/#${item == currentActive ? currentActive : ""}`}
@@ -36,19 +38,19 @@ const NavBar = () => {
 
           <Link
             href="#skills"
-            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+            className={` cursor-pointer  text-[#5a5d7a] hover:text-[#FDCC49] ml-5 md:ml-20`}
           >
             skills
           </Link>
           <Link
             href="#projects"
-            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+            className={` cursor-pointer text-[#5a5d7a] hover:text-[#FDCC49] ml-5 md:ml-20`}
           >
             projects
           </Link>
           <Link
             href="#contact"
-            className={` cursor-pointer  text-white hover:text-[#FDCC49] ml-5 md:ml-20`}
+            className={` cursor-pointer text-[#5a5d7a] hover:text-[#FDCC49] ml-5 md:ml-20`}
           >
             Contact
           </Link>

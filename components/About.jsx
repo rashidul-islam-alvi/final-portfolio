@@ -7,7 +7,7 @@ import { BsGithub, BsWhatsapp, BsFacebook } from "react-icons/bs";
 const About = () => {
   // const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
   return (
-    <div className="flex flex-col md:flex-row md:h-[90vh] text-white justify-between items-center pt-10 md:pt-0 pb-14 md:pb-0 ">
+    <div className="flex flex-col md:flex-row md:h-[90vh]  justify-between items-center pt-10 md:pt-0 pb-14 md:pb-0 ">
       <div className="flex flex-col items-center justify-center flex-1 mb-10 ">
         <div
         //   className="relative z-0 before:absolute before:-top-1 md:before:-top-7 md:before:-left-20 before:rounded-full
@@ -16,14 +16,14 @@ const About = () => {
           <Image
             src={profilePic}
             alt="Profile Picture"
-            className="rounded-full max-w-[200px] mb-10 md:max-w-[300px] opacity-60 hover:opacity-100 duration-300"
+            className="rounded-full max-w-[200px] mb-10 md:max-w-[300px]  duration-300"
           />
         </div>
-        <p className="text-xs ">Hello, i'm</p>
-        <h2 className="text-xl text-[#e7d184] md:text-2xl">
+        <p className="text-sm md:text-lg">Hello, i'm</p>
+        <h2 className="text-xl text-secondary md:text-4xl">
           Md. Rashidul Islam
         </h2>
-        <p className="text-xs ">Front End Engineer</p>
+        <p className="text-sm md:text-lg ">Front End Engineer</p>
 
         <div className="py-3 md:hidden">
           <ul className="flex">

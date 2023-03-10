@@ -11,7 +11,7 @@ const SideBar = () => {
   // const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
 
   return (
-    <div className="hidden fixed left-0 h-full text-white  border-white w-[10%] md:flex flex-col items-center justify-center">
+    <div className="hidden fixed left-0 h-full text-black  border-white w-[10%] md:flex flex-col items-center justify-center">
       <ul>
         {/* {icons.map((icon, i) => (
           <li

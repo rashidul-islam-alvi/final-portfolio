@@ -77,38 +77,42 @@ const Projects = () => {
   ];
   const spanStyle = "text-sm mr-2";
   return (
-    <div
-      id="projects"
-      className="text-white md:flex md:flex-col md:items-center"
-    >
+    <div id="projects" className=" md:flex md:flex-col md:items-center">
       <Header title="Projects" />
 
       {projects.slice(0, visibleProjects).map((project) => (
-        <div
-          key={project.id}
-          className=" w-full md:w-[70%] px-2 md:px-0 flex gap-x-5 bg-[#0B1C31]  mt-10 rounded-md text-gray-300"
-        >
-          <div className="flex-1 hidden w-full md:flex">
-            <Image src={project.img} alt="project" className="object-cover" />
-          </div>
-          <div className="flex-1 p-3 md:flex md:flex-col ">
-            <h3 className="mb-5 text-xl text-secondary">{project.title}</h3>
-            <p className="mb-5 text-sm max-w-[80%] md:bg-black md:py-3 px-1 text-white ">
-              {project.desc}
-            </p>
-            <div className="flex flex-wrap mb-5 gap-y-2">
-              {project.tools?.map((tool) => (
-                <span className={spanStyle} key={tool}>
-                  {tool}
-                </span>
-              ))}
+        <div className="mt-10 md:w-[80%]">
+          <div className="px-3 py-4 md:p-8  md:flex shadow-[0px_0px_3px_rgba(3,102,214,0.3)]">
+            <div className="flex-1 hidden md:block">
+              <Image src={project.img} className="object-cover w-full h-full" />
             </div>
+            <div className="flex-1 md:ml-8">
+              <h1 className="mb-2 md:mb-10 font-bold md:text-[1.5rem]">
+                {project.title}
+              </h1>
+              <p className="mb-5 text-sm md:text-xl">{project.desc}</p>
 
-            <div className="flex text-2xl">
-              <BsGithub className="mr-3 cursor-pointer " />
-              <Link target="_blank" href={project.link}>
-                <BsBoxArrowUpRight className="curson-pointer" />
-              </Link>
+              <div className="flex flex-wrap">
+                {project.tools?.map((tool) => (
+                  <span
+                    key={tool}
+                    className="text-sm p-1 md:px-2 md:py-1 mr-2 mb-2 border-2 border-[#92eac0] rounded-md "
+                  >
+                    {tool}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-4">
+                <button className=" shadow-[0px_0px_3px_rgba(3,102,214,0.3)] flex items-center bg-[#747fe0] text-white px-4 py-2 md:px-[14px] md:py-[10px] cursor-pointer rounded-md  mb-3">
+                  <p className="hidden md:block"> Live Demo</p>
+                  <BsBoxArrowUpRight className="text-lg text-white " />
+                </button>
+                <button className="shadow-[0px_0px_3px_rgba(3,102,214,0.3)] flex items-center bg-white text-[#747fe0]  px-4 py-2 md:px-[14px] md:py-[10px] cursor-pointer rounded-md border-[#747fe0]">
+                  <BsGithub className=" text-[#747fe0] text-lg " />
+                  <p className="hidden md:block">Source Code</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -116,7 +120,7 @@ const Projects = () => {
 
       <button
         onClick={handleClick}
-        className="px-3 py-1 mt-10 text-sm text-gray-200 uppercase duration-200 border-2 md:px-4 md:py-2 rounded-xl border-secondary hover:text-black hover:bg-secondary hover:duration-200 "
+        className="px-3 py-1 mt-10 text-sm uppercase duration-200 border-2 md:px-4 md:py-2 rounded-xl border-secondary hover:text-white hover:bg-secondary hover:duration-200 "
       >
         {visibleProjects == projects.length - 1 ? "Show more" : "Show less"}
       </button>
