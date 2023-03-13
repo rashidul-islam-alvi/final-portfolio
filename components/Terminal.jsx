@@ -5,7 +5,7 @@ import { BiChevronRight } from "react-icons/bi";
 const Terminal = () => {
   return (
     <div className="">
-      <div className="bg-[#e4e3e5] p-2 rounded-t-lg flex">
+      <div className="flex p-2 rounded-t-lg">
         <div className="w-[12px] h-[12px] bg-[#f96256] rounded-full border-[#f65549] "></div>
         <div className="w-[12px] h-[12px] bg-[#fdbc3d] rounded-full border-[#ffb524] ml-[9px] "></div>
         <div className="w-[12px] h-[12px] bg-[#33c948] rounded-full border-[#2dbb41] ml-[9px] "></div>
@@ -52,9 +52,10 @@ const Terminal = () => {
 
           <div className="pb-[35px]">
             <div>
-              <p className="flex items-center text-[#f7f7f7]  ">
-                <BiChevronRight className="animate-ping" />
-              </p>
+              <span className="flex items-center text-[#f7f7f7]  ">
+                <BiChevronRight />
+                <div className="w-2 h-5 ml-2 bg-gray-500 animate-ping"></div>
+              </span>
             </div>
           </div>
         </div>

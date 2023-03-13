@@ -7,9 +7,10 @@ import { BsGithub, BsWhatsapp, BsFacebook } from "react-icons/bs";
 const About = () => {
   // const icons = [<BsFacebook />, <BsGithub />, <BsWhatsapp />];
   return (
-    <div className="flex flex-col md:flex-row md:h-[90vh]  justify-between items-center pt-10 md:pt-0 pb-14 md:pb-0 ">
-      <div className="flex flex-col items-center justify-center flex-1 mb-10 ">
+    <div className="flex flex-col md:flex-row md:h-[85vh]  justify-between items-center  pt-10 md:pt-0 pb-14 md:pb-0 ">
+      <div className="flex flex-col items-center justify-center flex-1 h-full ">
         <div
+
         //   className="relative z-0 before:absolute before:-top-1 md:before:-top-7 md:before:-left-20 before:rounded-full
         //     before:w-full before:max-w-[300px] md:before:max-w-[600px] before:h-full before:border-2 before:border-gray before:z-[-1]"
         >
@@ -51,7 +52,7 @@ const About = () => {
           </ul>
         </div>
       </div>
-      <div className="flex items-center justify-center flex-1 ">
+      <div className="flex items-center justify-center flex-1 border-2 ">
         <Terminal />
       </div>
     </div>

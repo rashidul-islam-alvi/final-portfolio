@@ -26,8 +26,8 @@ const GoToTop = () => {
       className={`fixed right-0 ${display} items-center  h-[70vh] w-[5%] animate-bounce pr-5 md:p-0`}
     >
       <div onClick={scrollToTop}>
-        <RxDoubleArrowUp className="text-lg text-white cursor-pointer md:text-4xl " />
-        <RxDoubleArrowUp className="text-lg text-white cursor-pointer md:text-4xl " />
+        <RxDoubleArrowUp className="text-lg cursor-pointer md:text-4xl " />
+        <RxDoubleArrowUp className="text-lg cursor-pointer md:text-4xl " />
       </div>
     </div>
   );

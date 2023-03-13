@@ -33,6 +33,7 @@ const Projects = () => {
         "Responsive",
       ],
       link: "https://final-portfolio-bv61-git-main-rashidul-islam-alvi.vercel.app/",
+      github: "https://github.com/rashidul-islam-alvi/final-portfolio",
     },
 
     {
@@ -50,6 +51,8 @@ const Projects = () => {
         "Material Icons",
       ],
       link: "",
+      github:
+        "https://github.com/rashidul-islam-alvi/Digital-learning-platform",
     },
     {
       id: 3,
@@ -64,7 +67,8 @@ const Projects = () => {
         "JavaScript",
         "SEO Optimized",
       ],
-      link: "",
+      link: "https://pokemon-u7cw-53tbywrzx-rashidul-islam-alvi.vercel.app/",
+      github: "https://github.com/rashidul-islam-alvi/pokemon",
     },
     {
       id: 4,
@@ -73,9 +77,10 @@ const Projects = () => {
       img: calculatorProject,
       tools: ["Vanilla JS", "CSS", "HTML", "JavaScript"],
       link: "",
+      github: "https://github.com/rashidul-islam-alvi/tip-calculator-app-main",
     },
   ];
-  const spanStyle = "text-sm mr-2";
+
   return (
     <div id="projects" className=" md:flex md:flex-col md:items-center">
       <Header title="Projects" />
@@ -84,13 +89,17 @@ const Projects = () => {
         <div className="mt-10 md:w-[80%]" key={project.id}>
           <div className="px-3 py-4 md:p-8  md:flex shadow-[0px_0px_3px_rgba(3,102,214,0.3)]">
             <div className="flex-1 hidden md:block">
-              <Image src={project.img} className="object-cover w-full h-full" />
+              <Image
+                src={project.img}
+                className="object-cover w-full h-full"
+                alt="project-image"
+              />
             </div>
             <div className="flex-1 md:ml-8">
               <h1 className="mb-2 md:mb-10 font-bold md:text-[1.5rem]">
                 {project.title}
               </h1>
-              <p className="mb-5 text-sm md:text-xl">{project.desc}</p>
+              <span className="mb-5 text-sm md:text-xl">{project.desc}</span>
 
               <div className="flex flex-wrap">
                 {project.tools?.map((tool) => (
@@ -105,12 +114,24 @@ const Projects = () => {
 
               <div className="mt-4">
                 <button className=" shadow-[0px_0px_3px_rgba(3,102,214,0.3)] flex items-center bg-[#747fe0] text-white px-4 py-2 md:px-[14px] md:py-[10px] cursor-pointer rounded-md  mb-3">
-                  <p className="hidden md:block"> Live Demo</p>
-                  <BsBoxArrowUpRight className="text-lg text-white " />
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    className="flex items-center"
+                  >
+                    <span className="hidden md:block"> Live Demo</span>
+                    <BsBoxArrowUpRight className="text-lg text-white md:ml-3 " />
+                  </Link>
                 </button>
                 <button className="shadow-[0px_0px_3px_rgba(3,102,214,0.3)] flex items-center bg-white text-[#747fe0]  px-4 py-2 md:px-[14px] md:py-[10px] cursor-pointer rounded-md border-[#747fe0]">
-                  <BsGithub className=" text-[#747fe0] text-lg " />
-                  <p className="hidden md:block">Source Code</p>
+                  <Link
+                    className="flex items-center"
+                    target="_blank"
+                    href={project.github}
+                  >
+                    <BsGithub className=" text-[#747fe0] text-lg md:mr-3 " />
+                    <span className="hidden md:block">Source Code</span>
+                  </Link>
                 </button>
               </div>
             </div>
@@ -118,12 +139,26 @@ const Projects = () => {
         </div>
       ))}
 
-      <button
-        onClick={handleClick}
-        className="px-3 py-1 mt-10 text-sm uppercase duration-200 border-2 md:px-4 md:py-2 rounded-xl border-secondary hover:text-white hover:bg-secondary hover:duration-200 "
-      >
-        {visibleProjects == projects.length - 1 ? "Show more" : "Show less"}
-      </button>
+      <div className="flex gap-3">
+        <button
+          onClick={handleClick}
+          className="px-3 py-1 mt-10 text-sm uppercase duration-200 border-2 md:px-4 md:py-2 rounded-xl border-[#747fe0] hover:text-white hover:bg-[#747fe0] hover:duration-200 "
+        >
+          {visibleProjects == projects.length - 1 ? "Show more" : "Show less"}
+        </button>
+
+        <Link
+          href="https://github.com/rashidul-islam-alvi?tab=repositories"
+          target="_blank"
+        >
+          <button
+            onClick={handleClick}
+            className="px-3 py-1 mt-10 text-sm uppercase duration-200 border-2 md:px-4 md:py-2 rounded-xl hover:border-[#747fe0] hover:text-black text-white bg-[#747fe0]  hover:bg-white hover:duration-200 "
+          >
+            See all
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
