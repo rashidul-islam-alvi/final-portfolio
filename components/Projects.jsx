@@ -6,11 +6,12 @@ import portfolioPicture from "../assests/portfolio.jpg";
 import prokemonProject from "../assests/pokemon.jpg";
 import calculatorProject from "../assests/calculator.jpg";
 import shikhbeNakiProject from "../assests/shikhbeNaki.jpg";
+import todo from "../assests/todo.JPG";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 const Projects = () => {
-  const [visibleProjects, setvisibleProjects] = useState(3);
+  const [visibleProjects, setvisibleProjects] = useState(4);
   const handleClick = () => {
     visibleProjects == projects.length - 1
       ? setvisibleProjects(() => visibleProjects + 1)
@@ -56,6 +57,25 @@ const Projects = () => {
     },
     {
       id: 3,
+      title: "Todo List",
+      desc: "a todo website with CRUD functionality",
+      img: todo,
+      tools: [
+        "ReactJs",
+        "Tailwind",
+        "Redux",
+        "Local Storage",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Responsive",
+      ],
+      link: "https://todos-react-redux-local-storage-peyll3f93-rashidul-islam-alvi.vercel.app/",
+      github:
+        "https://github.com/rashidul-islam-alvi/todos-react-redux-localStorage",
+    },
+    {
+      id: 4,
       title: "Pokemon.all",
       desc: "A pokemon website where you can browse all the pokemons and see their abilities, stats and other stuff. It's just a template right now, need to feed it with a pokemon API",
       img: prokemonProject,
@@ -71,7 +91,7 @@ const Projects = () => {
       github: "https://github.com/rashidul-islam-alvi/pokemon",
     },
     {
-      id: 4,
+      id: 5,
       title: "Bill and Tip Calculator",
       desc: "A simple calculator to calculate the bill and tip by per person.",
       img: calculatorProject,
@@ -99,9 +119,9 @@ const Projects = () => {
               <h1 className="mb-2 md:mb-10 font-bold md:text-[1.5rem]">
                 {project.title}
               </h1>
-              <span className="mb-5 text-sm md:text-xl">{project.desc}</span>
+              <span className="text-sm md:text-xl">{project.desc}</span>
 
-              <div className="flex flex-wrap">
+              <div className="flex flex-wrap mt-5">
                 {project.tools?.map((tool) => (
                   <span
                     key={tool}
