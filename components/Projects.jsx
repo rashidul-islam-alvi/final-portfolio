@@ -6,7 +6,7 @@ import portfolioPicture from "../assests/portfolio.jpg";
 import prokemonProject from "../assests/pokemon.jpg";
 import calculatorProject from "../assests/calculator.jpg";
 import shikhbeNakiProject from "../assests/shikhbeNaki.jpg";
-import todo from "../assests/todo.JPG";
+import todo from "../assests/todo.jpg";
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
