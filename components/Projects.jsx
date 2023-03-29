@@ -6,7 +6,7 @@ import portfolioPicture from "../assests/portfolio.jpg";
 import prokemonProject from "../assests/pokemon.jpg";
 import calculatorProject from "../assests/calculator.jpg";
 import shikhbeNakiProject from "../assests/shikhbeNaki.jpg";
-import todo from "../assests/todo.jpg";
+
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
@@ -59,7 +59,7 @@ const Projects = () => {
       id: 3,
       title: "Todo List",
       desc: "a todo website with CRUD functionality",
-      img: todo,
+      img: "",
       tools: [
         "ReactJs",
         "Tailwind",
@@ -112,7 +112,7 @@ const Projects = () => {
               <Image
                 src={project.img}
                 className="object-cover w-full h-full"
-                alt="project-image"
+                alt="Image not available right now"
               />
             </div>
             <div className="flex-1 md:ml-8">
